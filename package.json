@@ -5,11 +5,14 @@
   "main": "index.js",
   "dependencies": {
     "@tensorflow/tfjs": "^0.13.2",
-    "parcel": "^1.10.3"
+    "@tensorflow/tfjs-node": "^0.1.18",
+    "fs": "0.0.1-security",
+    "parcel": "^1.10.3",
+    "parcel-bundler": "^1.10.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel --target=node data.js & nodemon dist/data.js"
   },
   "repository": {
     "type": "git",
